@@ -1,0 +1,375 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-out;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover
+{
+    opacity: 0.6;
+}
+
+.page
+{
+    font-family: sans-serif;
+    text-align: center;
+    height: 100%;
+    font-size: 13pt;
+    overflow-x: hidden;
+    max-width: 1440px;
+    background-color: gainsboro;
+    margin: 0 auto;
+}
+
+.page__header
+{
+    height: 90px;
+    width: 100%;
+    max-width: 1440px;
+    position: fixed;
+    top: 0;
+}
+
+.header
+{
+    background-color: rgba(35, 48, 62, 0.5);
+}
+
+.container
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+
+.header__container
+{
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.container__name
+{
+    display: flex;
+    align-items: center;
+}
+
+.container__name a
+{
+    font-weight: bold;
+    color: white;
+}
+
+.container__name img
+{
+    width: 80px;
+    height: 60px;
+}
+
+.menu__item
+{
+    padding-right: 20px;
+    color: white;
+}
+
+.menu__item:last-child
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.main p, .main a
+{
+    line-height: 30px;
+}
+
+
+.main__first-image, .main__about, .main__form, .main__services, .main__gallery
+{
+    padding: 55px;
+}
+
+.main__first-image
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: fit-content;
+    color: white;
+    background: url(archive5.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+
+.main__headline, .about__headline, .infoBlock__headline, .services__headline, .contacts__headline, .gallery__headline
+{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.main__about
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+
+.about, .services, .gallery
+{
+    background-image: url(bgImg.jpg);
+    background-size: cover;
+}
+
+.about__container
+{
+    margin-top: 10px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.main__form
+{
+    background: url(banner3.jpg) 30% center no-repeat;
+    background-size: cover;
+}
+
+.form__textInfo
+{
+    color: white;
+}
+
+.form__container
+{
+    justify-content: center;
+}
+
+.form__item
+{
+    height: 57px;
+    width: 230px;
+    margin: 10px;
+    background: none;
+    text-align: center;
+    border: 2px dashed whitesmoke;
+    color: white;
+}
+
+.form__item::placeholder
+{
+    color: gainsboro;
+}
+
+.form__item option
+{
+    color: black;
+}
+
+.button
+{
+    border: none;
+    background-color: #f5a700;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.button:hover
+{   
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.main__container, .services__container
+{
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.container__infoBlock
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    min-height: fit-content;
+    background-color: white;
+    box-shadow: 0 5px 27px 3px rgba(0, 0, 0, 0.2);
+    padding: 20px 20px;
+    box-sizing: border-box;
+    color: black;
+    margin: 26px;
+}
+
+.container__imgBlock
+{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.container__imgBlock img
+{
+    width: 100%;
+    height: 100%;
+    max-width: 1100px;
+    max-height: 1100px;
+    border-radius: 10px;
+    box-shadow: 0 5px 27px 3px rgba(0, 0, 0, 0.2);
+}
+
+.container__textBlock
+{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.gallery__carousel
+{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(35, 48, 62, 0.5);
+    overflow-x: hidden;
+    min-height: 400px;
+    padding: 1%;
+    margin-top: 10px;
+}
+
+.carousel__item
+{
+    min-height: 400px;
+    min-width: 320px;
+    margin: 10px 10px;
+}
+
+.carousel__item img
+{
+    height: 100%;
+    width: 100%;
+}
+
+.footer__contacts
+{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 40px;
+}
+
+.contacts
+{
+    background-color: rgba(35, 48, 62, 0.5);
+    color: white;
+}
+
+.contacts__data, .contacts__map
+{
+    background-color: rgba(35, 48, 62, 0.4);
+    width: 45%;
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.contacts__data
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts a
+{
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+}
+
+.contacts a, .contacts p
+{
+    padding-bottom: 10px;
+}
+
+@media (min-width: 1366px)
+{
+    .page
+    {
+        font-size: 16pt;
+    }
+
+}
+
+@media (min-width: 1440px)
+{
+    .page
+    {
+        font-size: 17pt;
+    }
+
+}
+
+@media (max-width: 1024px)
+{
+    .page
+    {
+        font-size: 11pt;
+    }
+    .main__first-image
+    {
+        background-size: cover;
+    }
+    .services__container
+    {
+        flex-wrap: wrap;
+    }
+    .main__first-image, .main__about, .main__form, .main__services, .main__gallery
+    {
+        padding: 35px;
+    }
+    .about__container, .footer__contacts
+    {
+        flex-direction: column;
+    }
+    .footer__contacts
+    {
+        padding: 25px
+    }
+    .contacts__data, .contacts__map
+    {
+        margin-right: 0;
+        width: auto;
+    }
+    .container__imgBlock, .container__textBlock
+    {
+        width: 80%;
+    }
+    .container__imgBlock
+    {
+        margin-top: 2%;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .page
+    {
+        font-size: 11pt;
+    }
+}
+
